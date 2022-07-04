@@ -43,6 +43,9 @@ class PageViewController: UIPageViewController {
         segmentedControl.selectedSegmentIndex = index
         segmentedControl.setWidth(100, forSegmentAt: 0)
         segmentedControl.setWidth(100, forSegmentAt: 1)
+        if #available(iOS 13.0, *) {
+            segmentedControl.selectedSegmentTintColor = self.readerConfig.menuTextColorSelected
+        }
         self.navigationItem.titleView = segmentedControl
 
         viewList = [viewControllerOne, viewControllerTwo]
