@@ -4,23 +4,23 @@ PODS:
     - AEXML (= 4.3.3)
     - FontBlaster (= 4.1.0)
     - MenuItemKit (= 3.1.3)
-    - RealmSwift (= 3.17.3)
+    - RealmSwift (= 10.45.2)
     - SSZipArchive (= 2.1.1)
     - ZFDragableModalTransition (= 0.6)
   - FontBlaster (4.1.0)
   - MenuItemKit (3.1.3)
   - Nimble (7.3.1)
   - Quick (1.3.2)
-  - Realm (3.17.3):
-    - Realm/Headers (= 3.17.3)
-  - Realm/Headers (3.17.3)
-  - RealmSwift (3.17.3):
-    - Realm (= 3.17.3)
+  - Realm (10.45.2):
+    - Realm/Headers (= 10.45.2)
+  - Realm/Headers (10.45.2)
+  - RealmSwift (10.45.2):
+    - Realm (= 10.45.2)
   - SSZipArchive (2.1.1)
   - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
-  - FolioReaderKit (from `../`)
+  - FolioReaderKit (from `https://github.com/pinturajput91/FolioReaderKit.git`, branch `master`)
   - Nimble (= 7.3.1)
   - Quick (= 1.3.2)
 
@@ -38,20 +38,26 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   FolioReaderKit:
-    :path: "../"
+    :branch: master
+    :git: https://github.com/pinturajput91/FolioReaderKit.git
+
+CHECKOUT OPTIONS:
+  FolioReaderKit:
+    :commit: 4614535303f512baee3cae0b42b82dccbac61a15
+    :git: https://github.com/pinturajput91/FolioReaderKit.git
 
 SPEC CHECKSUMS:
   AEXML: 601f41fcaa7bda7605cad153b0f43db9ec006c0f
-  FolioReaderKit: 6b5daca560b3dd6905ab14870f4823d7e1f283de
+  FolioReaderKit: d596288de564801e1ca8a6cefa47fb69f86353b8
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   MenuItemKit: 0f850e630b0a3d2bd80fec54db87ce0d2077ada2
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
-  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
-  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  Realm: bc4fc31783a0b3e355edca05f167f6a49c544dc2
+  RealmSwift: 234003b5fdb187c4b439d478662636d62a1f9de0
   SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: f5840071ca5121876c1758f6405302b47804dd07
+PODFILE CHECKSUM: fe48f56f8174039c07d93515be8450712a69129f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.12.1
